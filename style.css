@@ -2,11 +2,11 @@ body{
   background-color:#C99B4F;
 }
 
-<<<<<<< HEAD
+
 .footer div{
 display:flex;
+}
 
-=======
 .container {
   display: flex;
   height: 200px;
@@ -14,7 +14,7 @@ display:flex;
   justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 20px;
->>>>>>> 9b475ceda9d3de4798e42e7723f596c8a842ec32
+
 }
 
 header{
