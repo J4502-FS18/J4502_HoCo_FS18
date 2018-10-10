@@ -20,3 +20,23 @@ display:flex;
 header{
   display: flex;
 }
+
+.hamburger{
+  flex-grow: 1;
+}
+
+.page-1{
+  background-color: black;
+}
+
+.page-2{
+  background-color: black;
+}
+
+.page-3{
+  background-color: black;
+}
+
+.page-4{
+  background-color: black;
+}
