@@ -3,8 +3,14 @@ body{
 }
 
 <<<<<<< HEAD
-
+<<<<<<< HEAD
 =======
+
+.footer div{
+display:flex;
+}
+>>>>>>> 12ea589d25b4175aabdc28dcb7e5aa7e0f5e1175
+
 .container {
   display: flex;
   height: 200px;
@@ -12,7 +18,7 @@ body{
   justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 20px;
->>>>>>> 9b475ceda9d3de4798e42e7723f596c8a842ec32
+
 }
 
 <<<<<<< HEAD
@@ -24,4 +30,24 @@ flex-direction: row;
 header{
   display: flex;
 >>>>>>> 94e74a7a6b48397bec3516bad52a2da935e1e991
+}
+
+.hamburger{
+  flex-grow: 1;
+}
+
+.page-1{
+  background-color: black;
+}
+
+.page-2{
+  background-color: black;
+}
+
+.page-3{
+  background-color: black;
+}
+
+.page-4{
+  background-color: black;
 }
