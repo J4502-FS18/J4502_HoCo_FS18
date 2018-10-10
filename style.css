@@ -35,12 +35,13 @@ header{
   background-color: black;
   height: 450px;
   width: 250px;
+  align-items: center;
 }
-
+/*
 .page-1 a:link{
   color: #C99B4F;
   font-size: 25px;
-  font-style: "Roboto";
+  font-family: "Roboto";
 }
 
 .page-2 a:link{
@@ -57,10 +58,24 @@ header{
   color: #C99B4F;
   font-size: 25px;
 }
-
+*/
 .hamburger{
   align-self: center;
 }
 
 .logo{
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:visited{
+  color: gray;
+}
+
+.page a:link{
+  font-size: 25px;
+  font-family: "Roboto";
+  color: #C99B4F;
 }
