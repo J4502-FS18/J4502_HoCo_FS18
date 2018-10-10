@@ -2,14 +2,12 @@ body{
   background-color:#C99B4F;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 
 .footer div{
 display:flex;
 }
->>>>>>> 12ea589d25b4175aabdc28dcb7e5aa7e0f5e1175
+
 
 .container {
   display: flex;
@@ -21,19 +19,20 @@ display:flex;
 
 }
 
-<<<<<<< HEAD
+
 
 .footer{
 display: flex;
 flex-direction: row;
-=======
+}
+
 header{
   display: flex;
->>>>>>> 94e74a7a6b48397bec3516bad52a2da935e1e991
+  justify-content: space-between;
 }
 
 .hamburger{
-  flex-grow: 1;
+
 }
 
 .page-1{
