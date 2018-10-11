@@ -49,13 +49,12 @@ a:link {
 .footer{
   display: flex;
   padding: 2%;
-  background-color: black;
+  background-color: #7F7A69;
   justify-content: flex-start;
   align-items: center;
 }
 
 .footerimg{
-background-color: white;
 flex: 1;
 width: 25%;
 }
@@ -64,7 +63,6 @@ width: 25%;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 300;
-  background-color: gray;
   flex: 5;
   width: 75%;
 }
