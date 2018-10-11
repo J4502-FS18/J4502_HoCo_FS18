@@ -113,9 +113,16 @@ width: 25%;
 }
 
 .eventstext{
-  background-color: green;
   flex: 2;
   padding: 0 10px;
+}
+
+.eventstext a:visited{
+  color: black;
+}
+
+.eventshead{
+  text-align: center;
 }
 
 img{
