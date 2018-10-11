@@ -45,16 +45,30 @@ a:link {
   color: white;
 }
 
-.contactinfo {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-}
 
 .footer{
   display: flex;
-  border: solid #ccc;
+  padding: 2%;
+  background-color: black;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+.footerimg{
+background-color: white;
+flex: 1;
+width: 25%;
+}
+
+.contactinfo {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  background-color: gray;
+  flex: 5;
+  width: 75%;
+}
+
 /*
 header {
   display: flex;
