@@ -47,7 +47,7 @@ a:link {
   text-decoration: none;
 }
 
-.page a:link {
+/*.page a:link {
   color: #C99B4F;
   font-family: "Roboto";
   font-size: 32px;
@@ -58,6 +58,7 @@ a:link {
 .page a:visited {
   color: gray;
 }
+*/
 /* FOR IMAGE SLIDER REAL
 .imageslider {
   display: flex;
@@ -71,26 +72,7 @@ a:link {
 }
 
 
-.footer{
-  display: flex;
-  padding: 2%;
-  background-color: #7F7A69;
-  justify-content: flex-start;
-  align-items: center;
-}
 
-.footerimg{
-flex: 1;
-width: 25%;
-}
-
-.contactinfo {
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  flex: 5;
-  width: 75%;
-}
 
 /* FEATURES */
 
@@ -107,12 +89,21 @@ width: 25%;
 
 .featurephoto{
   flex: 1;
-  border: solid 4px #ccc;
+  border: solid 4px black;
 }
 
 .featuretext{
   flex: 2;
   padding: 0 10px;
+}
+
+.featuretext a:link, a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+.featuretext a:hover, a:active{
+  color: #21263B;
 }
 
  img{
@@ -121,3 +112,39 @@ width: 25%;
 
 }
 /* END FEATURES */
+.footer{
+  display: flex;
+  padding: 2% 5%;
+  background-color:black;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footerimg{
+flex: 1;
+width: 25%;
+}
+
+.contactinfo{
+  font-family: "Roboto", sans-serif;
+  color: #C99B4F;
+  font-size: 13px;
+  font-weight: 300;
+  flex: 5;
+  width: 75%;
+  margin-left: 18px;
+
+}
+
+.contactinfo a:link, a:visited{
+  color: #C99B4F;
+
+
+}
+.contactinfo a:hover, a:active{
+  color: #21263B;
+
+}
+.url a:link, a:visited{
+  color: #C99B4F;
+}
