@@ -7,6 +7,32 @@ header {
   padding: 2% .5%;
 }
 
+/* HEADERS */
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* END HEADERS */
+
 .container {
   display: flex;
   height: 300px;
@@ -66,6 +92,7 @@ width: 25%;
   flex: 5;
   width: 75%;
 }
+
 
 /*
 header {
