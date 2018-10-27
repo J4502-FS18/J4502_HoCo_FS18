@@ -121,6 +121,10 @@ width: 25%;
   color: black;
 }
 
+.eventstext a:link{
+  color: black;
+}
+
 .eventshead{
   text-align: center;
 }
