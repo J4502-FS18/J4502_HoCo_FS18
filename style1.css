@@ -1,3 +1,7 @@
+
+.mapstitle{
+text-align: center;
+}
 body{
   background-color:#C99B4F;
 }
@@ -70,8 +74,6 @@ a:link {
   font-weight: 300;
   color: white;
 }
-
-
 
 
 /* FEATURES */
@@ -149,7 +151,7 @@ width: 25%;
   color: #C99B4F;
 }
 
-/* This is wehre i wstarted adding grid stuff */
+/* FOR MAPS GRID */
 
 .cards{
   margin: 0 20px;
