@@ -148,3 +148,41 @@ width: 25%;
 .url a:link, a:visited{
   color: #C99B4F;
 }
+
+/* This is wehre i wstarted adding grid stuff */
+
+.cards{
+  margin: 0 20px;
+  padding:0;
+  list-style:none;
+  justify-content: center;
+  display:grid;
+  grid-gap:20px;
+  gap:30px;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+}
+
+.cards img{
+  width:100%
+}
+
+.cardtext{
+  max-width:200px;
+  text-align:center;
+  justify-content:center;
+}
+
+.cards1{
+  grid-area:a;
+}
+
+.cards2{
+  grid-area:b;
+}
+
+.cards3{
+  grid-area:c;
+}
