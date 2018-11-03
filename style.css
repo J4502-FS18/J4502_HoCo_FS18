@@ -263,23 +263,26 @@ width: 25%;
 /* HISTORY PAGE TILES CSS */
 
 .cards{
-margin: 0 20px;
+margin: 0 10px;
 padding: 0;
 list-style: none;
 justify-content: center;
 display: grid;
-grid-gap:20px;
-gap:30px;
+grid-gap:10px;
+gap:10px;
 grid-template-areas:
-"a b c"
-"e f g";
+"a b"
+"c d"
+"e f"
+"g h"
+"i j"
+"k l";
 }
 
 .cards li{
-border: 1.5px solid #ffffff;
 padding: 5px;
 border-radius: 5px;
-max-width: 200px;
+max-width: 400px;
 }
 
 .cards img{
@@ -293,7 +296,7 @@ max-width: 200px;
 }
 
 .card1{
-  grid-area:a;
+  grid-area: a;
 }
 
 .card2{
@@ -303,22 +306,41 @@ max-width: 200px;
   grid-area: c;
 }
 .card4{
-  grid-area:d;
+  grid-area: d;
 }
 .card5{
-  grid-area:e;
+  grid-area: e;
 }
 .card6{
   grid-area: f;
+}
+.card7{
+  grid-area: g;
+}
+.card8{
+  grid-area: h;
+}
+.card9{
+  grid-area: i;
+}
+.card10{
+  grid-area: j;
+}
+.card11{
+  grid-area: k;
+}
+.card12{
+  grid-area: l;
 }
 
 @media screen and (min-width:550px){
   .cards{
     display:grid;
     grid-template-areas:
-    "a b"
-    "c d"
-    "e f";
+    "a b c"
+    "d e f"
+    "g h i"
+    "j k l";
   }
 }
 
