@@ -260,6 +260,83 @@ width: 25%;
   text-align: center;
 }
 
+/* HISTORY PAGE TILES CSS */
+
+.cards{
+margin: 0 20px;
+padding: 0;
+list-style: none;
+justify-content: center;
+display: grid;
+grid-gap:20px;
+gap:30px;
+background-color: #E09CE8;
+color: #8ab0ff;
+grid-template-areas:
+"e f"
+"a c"
+"b d";
+}
+
+.cards li{
+background-color: #8ab0ff;
+border: 1.5px solid #ffffff;
+padding: 5px;
+border-radius: 5px;
+max-width: 200px;
+}
+
+.cards img{
+  width: 100%;
+}
+
+.cardtext{
+  max-width:200px;
+  text-align:center;
+  justify-content:center;
+}
+
+.card1{
+  grid-area:a;
+}
+
+.card2{
+  grid-area: b;
+}
+.card3{
+  grid-area: c;
+}
+.card4{
+  grid-area:d;
+}
+.card5{
+  grid-area:e;
+}
+.card6{
+  grid-area: f;
+}
+
+@media screen and (min-width:600px){
+  .cards{
+    display:grid;
+    grid-template-areas:
+    "a c"
+    "e f"
+    "b d";
+  }
+}
+
+@media screen and (min-width: 750px){
+  .cards{
+    display:grid;
+    grid-template-areas:
+    "b d"
+    "a c"
+    "e f";
+  }
+}
+/* END OF HISTORY PAGE TILES */
+
 /*
 header {
   display: flex;
