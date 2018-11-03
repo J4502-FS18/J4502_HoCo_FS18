@@ -274,6 +274,7 @@ display: grid;
 grid-gap:10px;
 gap:10px;
 grid-template-areas:
+"m m "
 "a b"
 "c d"
 "e f"
@@ -335,11 +336,15 @@ max-width: 400px;
 .card12{
   grid-area: l;
 }
+.card13{
+  grid-area: m;
+}
 
 @media screen and (min-width:550px){
   .cards{
     display:grid;
     grid-template-areas:
+    "m m m"
     "a b c"
     "d e f"
     "g h i"
