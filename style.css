@@ -1,3 +1,21 @@
+/* Do a media query around 350 that has h5 and h6 set to display: none so that only the headline
+shows up. Then, at the next highest media query, do display: block so it shows up again */
+
+/*MEDIA QUERIES FOR HOME PAGE*/
+
+@media(max-width:399px){
+.description{
+  display: none;
+}
+}
+@media(min-width:399px){
+.readmore{
+  display: none;
+  font-size: 20px;
+}
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -6,10 +24,10 @@
 }
 
 .slidetext{
-  z-index: 10000;
+  /*z-index: 10000; */
   font-size: 30px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
   position: absolute;
@@ -119,7 +137,13 @@ header {
   background-color: black;
   padding: 2% .5%;
 }
-
+/*PARAGRAPH TEXT*/
+P {
+  color: #C99B4F;
+  font-family: "Roboto", sans-sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
 /* HEADERS */
 h1 {
   font-family: "Roboto", sans-serif;
@@ -161,6 +185,8 @@ h6{
   margin-top: 15px;
 }
 
+
+
 /* END HEADERS */
 
 .container {
@@ -186,6 +212,9 @@ a:link {
   font-style: italic;
 }
 
+.page{
+  display:none;
+}
 .container a:visited {
   color: gray;
 }
@@ -201,7 +230,7 @@ a:link {
   color: white;
 }
 
-
+/*
 .footer{
   display: flex;
   padding: 2% 5%;
@@ -209,12 +238,45 @@ a:link {
   justify-content: flex-start;
   align-items: center;
 }
+*/
 
+/*
 .footerimg{
 flex: 1;
 width: 25%;
 }
+*/
 
+/*FOOTER*/
+.footer{
+  display: grid;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "a b b b"
+}
+.footerimg{
+  max-width: 100px;
+  grid-area: a;
+}
+.footerinfo{
+  grid-area: b;
+  padding-left: 10px;
+  vertical-align: center;
+}
+.footerinfo a:link{
+  color: #C99B4F;
+}
+.footerinfo a:visited{
+  color: #C99B4F;
+}
+.footerinfo a:hover{
+  color: #49391D;
+}
+/*END FOOTER*/
+
+
+/*
 .contactinfo{
   font-family: "Roboto", sans-serif;
   color: #C99B4F;
@@ -237,6 +299,7 @@ width: 25%;
 .url a:link, a:visited{
   color: #C99B4F;
 }
+*/
 .events1{
   display: flex;
   flex-direction: column;
@@ -259,7 +322,11 @@ width: 25%;
 .eventshead{
   text-align: center;
 }
-
+/*
+img{
+ width: 100%;
+}
+*/
 /*
 header {
   display: flex;
