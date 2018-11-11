@@ -144,6 +144,8 @@ P {
   font-weight: 300;
   font-size: 15px;
 }
+
+
 /* HEADERS */
 h1 {
   font-family: "Roboto", sans-serif;
@@ -254,6 +256,11 @@ width: 25%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "a b b b"
+}
+
+.footertext{
+  color: #C99B4F;
+  font-family: "Roboto", sans-serif;
 }
 .footerimg{
   max-width: 100px;
