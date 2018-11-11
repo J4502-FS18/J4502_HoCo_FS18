@@ -8,7 +8,7 @@ body{
 
 header {
   background-color: black;
-  padding: 2% .5%;
+  padding: 2% 2%;
 }
 
 /* HEADERS */
@@ -35,17 +35,54 @@ h4 {
 }
 
 /* END HEADERS */
+header {
+  background-color: black;
+  padding: 2% 2%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "a b b b"
+}
+.menu-trigger{
+  font-size: 50px;
+  margin: 0 auto;
 
+
+}
 .container {
+  grid-area: a;
   display: flex;
-  height: 300px;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: black;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 200;
 }
+
+.logo{
+  grid-area: b;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+a:link {
+  text-decoration: none;
+}
+
+.container a:link {
+  color: #C99B4F;
+
+}
+.container a:visited{
+  color: #C99B4F;
+}
+.page{
+  grid-area: c;
+  display:none;
+  font-style: italic;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
 
 a:link {
   text-decoration: none;
