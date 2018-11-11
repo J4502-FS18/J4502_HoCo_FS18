@@ -493,6 +493,41 @@ grid-row: 1;
 
 .featuretext a:hover, a:active{
   color: #21263B;
+}
+
+/*story page CSS*/
+
+.storycards {
+  margin:0;
+  padding:0;
+	list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  gap:20px;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+}
+
+.storycard1{
+  grid-area:a;
+}
+
+.storycard2{
+  grid-area:b;
+}
+
+.storycard3{
+  grid-area:c;
+}
+
+
+article {
+  margin-bottom: 0.7em;
+}
+
 
 /*
 header {
