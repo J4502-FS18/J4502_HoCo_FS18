@@ -188,3 +188,9 @@ width: 25%;
 .cards3{
   grid-area:c;
 }
+
+/* story page css */
+
+.storyphoto{
+  width: 100%;
+}

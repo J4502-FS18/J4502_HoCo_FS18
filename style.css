@@ -260,6 +260,100 @@ width: 25%;
   text-align: center;
 }
 
+.historytitle{
+  text-align: center;
+}
+/* HISTORY PAGE TILES CSS */
+
+.cards{
+margin: 0 10px;
+padding: 0;
+list-style: none;
+justify-content: center;
+display: grid;
+grid-gap:10px;
+gap:10px;
+grid-template-areas:
+"m m "
+"a b"
+"c d"
+"e f"
+"g h"
+"i j"
+"k l";
+}
+
+.cards li{
+padding: 5px;
+border-radius: 5px;
+max-width: 400px;
+}
+
+.cards img{
+  width: 100%;
+}
+
+.cardtext{
+  max-width:200px;
+  text-align:center;
+  justify-content:center;
+}
+
+.card1{
+  grid-area: a;
+}
+
+.card2{
+  grid-area: b;
+}
+.card3{
+  grid-area: c;
+}
+.card4{
+  grid-area: d;
+}
+.card5{
+  grid-area: e;
+}
+.card6{
+  grid-area: f;
+}
+.card7{
+  grid-area: g;
+}
+.card8{
+  grid-area: h;
+}
+.card9{
+  grid-area: i;
+}
+.card10{
+  grid-area: j;
+}
+.card11{
+  grid-area: k;
+}
+.card12{
+  grid-area: l;
+}
+.card13{
+  grid-area: m;
+}
+
+@media screen and (min-width:550px){
+  .cards{
+    display:grid;
+    grid-template-areas:
+    "m m m"
+    "a b c"
+    "d e f"
+    "g h i"
+    "j k l";
+  }
+}
+
+/* END OF HISTORY PAGE TILES */
+
 /*
 header {
   display: flex;
