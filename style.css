@@ -10,15 +10,21 @@ shows up. Then, at the next highest media query, do display: block so it shows u
 .description{
   display: none;
 }
+
 }
 @media(min-width:399px){
 .readmore{
   display: none;
   font-size: 20px;
 }
+
 }
 
-
+.menu-trigger{
+  font-size: 50px;
+  margin: 0 auto;
+  max-height: 100px;
+}
 *{
   margin: 0;
   padding: 0;
@@ -194,17 +200,13 @@ header {
   background-color: black;
   padding: 2% 2%;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 70px 1fr 250px;
   grid-template-areas:
-  "a b b b"
+  "a b c"
 }
-.menu-trigger{
-  font-size: 50px;
-  margin: 0 auto;
 
-
-}
 .container {
+  align-self: center;
   grid-area: a;
   display: flex;
   flex-direction: column;
@@ -215,9 +217,8 @@ header {
 }
 
 .logo{
-  grid-area: b;
-  margin-right: 10px;
-  padding-top: 10px;
+  align-self: center;
+  grid-area: c;
 }
 a:link {
   text-decoration: none;
@@ -269,23 +270,26 @@ width: 25%;
 
 /*FOOTER*/
 .footer{
+  align-items: center;
   display: grid;
   background-color: black;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 100px 200px 1fr;
   grid-template-areas:
-  "a b b b"
+  "a b c d"
 }
 
 .footertext{
   color: #C99B4F;
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 .footerimg{
-  max-width: 100px;
-  grid-area: a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-area: b;
 }
 .footerinfo{
-  grid-area: b;
+  grid-area: c;
   padding-left: 10px;
   vertical-align: center;
 }
