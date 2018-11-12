@@ -8,7 +8,7 @@ body{
 
 header {
   background-color: black;
-  padding: 2% .5%;
+  padding: 2% 2%;
 }
 
 /* HEADERS */
@@ -35,17 +35,54 @@ h4 {
 }
 
 /* END HEADERS */
+header {
+  background-color: black;
+  padding: 2% 2%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "a b b b"
+}
+.menu-trigger{
+  font-size: 50px;
+  margin: 0 auto;
 
+
+}
 .container {
+  grid-area: a;
   display: flex;
-  height: 300px;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: black;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 200;
 }
+
+.logo{
+  grid-area: b;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+a:link {
+  text-decoration: none;
+}
+
+.container a:link {
+  color: #C99B4F;
+
+}
+.container a:visited{
+  color: #C99B4F;
+}
+.page{
+  grid-area: c;
+  display:none;
+  font-style: italic;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
 
 a:link {
   text-decoration: none;
@@ -110,47 +147,35 @@ a:link {
 
 /* END FEATURES */
 .footer{
-  display: flex;
-  padding: 2% 5%;
-  background-color:black;
-  justify-content: flex-start;
-  align-items: center;
+  display: grid;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "a b b b"
 }
 
-.footerimg{
-flex: 1;
-width: 25%;
-}
-
-.mapPictures{
-  width: 25%;
-  height: 25%;
-}
-
-.contactinfo{
+.footertext{
+  color: #C99B4F;
   font-family: "Roboto", sans-serif;
-  color: #C99B4F;
-  font-size: 13px;
-  font-weight: 300;
-  flex: 5;
-  width: 75%;
-  margin-left: 18px;
-
 }
-
-.contactinfo a:link, a:visited{
-  color: #C99B4F;
-
-
+.footerimg{
+  max-width: 100px;
+  grid-area: a;
 }
-.contactinfo a:hover, a:active{
-  color: #21263B;
-
+.footerinfo{
+  grid-area: b;
+  padding-left: 10px;
+  vertical-align: center;
 }
-.url a:link, a:visited{
+.footerinfo a:link{
   color: #C99B4F;
 }
-
+.footerinfo a:visited{
+  color: #C99B4F;
+}
+.footerinfo a:hover{
+  color: #49391D;
+}
 /* FOR MAPS GRID */
 
 .cards{
@@ -187,10 +212,4 @@ width: 25%;
 
 .cards3{
   grid-area:c;
-}
-
-/* story page css */
-
-.storyphoto{
-  width: 100%;
 }
