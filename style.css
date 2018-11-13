@@ -342,6 +342,7 @@ padding-top: 20px;
     "b c"
     "d d"
 }
+}
 =======
 .mapcards{
   display: block;
@@ -354,7 +355,6 @@ padding-top: 20px;
 }
 
 
->>>>>>> 58c2dedf6774c08d6d6a47a85f48dcaa5f41cd31
 @media (min-width:480px){
   .mapcards{
     display: grid;
