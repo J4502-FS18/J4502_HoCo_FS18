@@ -331,6 +331,7 @@ text-align: center;
 padding-top: 20px;
 }
 
+<<<<<<< HEAD
 @media (min-width:250px){
   .mapcards{
     display: grid;
@@ -341,6 +342,19 @@ padding-top: 20px;
     "b c"
     "d d"
 }
+=======
+.mapcards{
+  display: block;
+  /*grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+  grid-template-areas:
+  "a a"
+  "b c"
+  "d d"*/
+}
+
+
+>>>>>>> 58c2dedf6774c08d6d6a47a85f48dcaa5f41cd31
 @media (min-width:480px){
   .mapcards{
     display: grid;
@@ -575,18 +589,51 @@ grid-area: a;
 
 /*story page CSS*/
 
+.caption{
+font-family: "Roboto", sans-serif;
+font-weight: bold;
+font-style: italic;
+margin:auto;
+font-size: 10px;
+margin-top: 5px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+.photocredit{
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align:center;
+}
+
+.byline{
+  font-family: "Roboto", sans-serif;
+  font-weight: 50;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 .storycards {
   margin:0;
-  padding:0;
+  padding:10px;
 	list-style: none;
   display: grid;
-  grid-template-columns: 1fr;
   grid-gap: 20px;
-  gap:20px;
   grid-template-areas:
   "a"
   "b"
-  "c"
+  "c";
+}
+
+.storycards li{
+padding: 10px;
+border-radius: 5px;
 }
 
 .storycard1{
@@ -606,6 +653,31 @@ article {
   margin-bottom: 0.7em;
 }
 
+/*@media screen and (min-width:480px){
+  .storycards{
+    display:grid;
+    grid-gap:10px;
+    padding:10px;
+    grid-template-columns: repeat(1, 460px);
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
+  }*/
+
+  .storyphoto img{
+  display: block;
+  width: 75%;
+  height:auto;
+  margin-top: 0.5em;
+  margin:auto;
+  }
+}
+
+/*@media screen and (min-width:480px){
+  .storyphoto img{
+    width:100%;}
+  }/*
 
 /*
 header {
