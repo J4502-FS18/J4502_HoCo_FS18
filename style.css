@@ -321,6 +321,10 @@ width: 25%;
   grid-area:a;
   padding: 10px;
 }
+
+.footer{
+  grid-area: d;
+}
 .mapstitle{
 text-align: center;
 padding-top: 20px;
@@ -328,10 +332,12 @@ padding-top: 20px;
 @media (min-width:480px){
   .mapcards{
     display: grid;
-    grid-template-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
     grid-template-areas:
-    "a a a"
-    "b . c"
+    "a a"
+    "b c"
+    "d d"
   }
 
 }
@@ -374,13 +380,12 @@ padding-top: 20px;
 .eventshead{
   text-align: center;
 }
-<<<<<<< HEAD
 /*
 img{
  width: 100%;
 }
 */
-=======
+
 
 .historytitle{
   text-align: center;
