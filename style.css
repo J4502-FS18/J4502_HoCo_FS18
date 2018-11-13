@@ -1,16 +1,12 @@
 /* Do a media query around 350 that has h5 and h6 set to display: none so that only the headline
 shows up. Then, at the next highest media query, do display: block so it shows up again */
 
-
-
-
 /*MEDIA QUERIES FOR HOME PAGE*/
 
 @media(max-width:399px){
 .description{
   display: none;
 }
-
 }
 @media(min-width:399px){
 .readmore{
@@ -303,6 +299,43 @@ width: 25%;
   color: #49391D;
 }
 /*END FOOTER*/
+
+/*MAPS*/
+.mapcards{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+}
+.card2 {
+  grid-area:b;
+}
+
+.card3{
+  grid-area:c;
+}
+.maptext{
+  grid-area:a;
+  padding: 10px;
+}
+.mapstitle{
+text-align: center;
+padding-top: 20px;
+}
+@media (min-width:480px){
+  .mapcards{
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-areas:
+    "a a a"
+    "b . c"
+  }
+
+}
+
 
 
 /*
