@@ -218,6 +218,7 @@ header {
 }
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 .container a:link {
@@ -518,6 +519,7 @@ grid-area: a;
 */
 .eventshead{
   text-align: center;
+}
 
 /*END OF EVENTS CSS*/
 
@@ -525,7 +527,7 @@ grid-area: a;
   text-align: center;
 }
 
-.featuresgrid{
+.featuresgrid {
   margin: 0;
   padding: 0;
   display: grid;
@@ -551,7 +553,7 @@ grid-area: a;
   text-decoration: none;
 }
 
-.featurestext a:hover, a:active{
+.featurestext a:hover, .featurestext a:active{
   color: #21263B;
 }
 
