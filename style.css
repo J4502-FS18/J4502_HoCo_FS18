@@ -1,9 +1,6 @@
 /* Do a media query around 350 that has h5 and h6 set to display: none so that only the headline
 shows up. Then, at the next highest media query, do display: block so it shows up again */
 
-
-
-
 /*MEDIA QUERIES FOR HOME PAGE*/
 
 @media(max-width:399px){
@@ -16,9 +13,14 @@ shows up. Then, at the next highest media query, do display: block so it shows u
   display: none;
   font-size: 20px;
 }
+
 }
 
-
+.menu-trigger{
+  font-size: 50px;
+  margin: 0 auto;
+  max-height: 100px;
+}
 *{
   margin: 0;
   padding: 0;
@@ -194,17 +196,13 @@ header {
   background-color: black;
   padding: 2% 2%;
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 70px 1fr 250px;
   grid-template-areas:
-  "a b b b"
+  "a b c"
 }
-.menu-trigger{
-  font-size: 50px;
-  margin: 0 auto;
 
-
-}
 .container {
+  align-self: center;
   grid-area: a;
   display: flex;
   flex-direction: column;
@@ -215,12 +213,12 @@ header {
 }
 
 .logo{
-  grid-area: b;
-  margin-right: 10px;
-  padding-top: 10px;
+  align-self: center;
+  grid-area: c;
 }
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 .container a:link {
@@ -269,23 +267,26 @@ width: 25%;
 
 /*FOOTER*/
 .footer{
+  align-items: center;
   display: grid;
   background-color: black;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 100px 200px 1fr;
   grid-template-areas:
-  "a b b b"
+  "a b c d"
 }
 
 .footertext{
   color: #C99B4F;
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 .footerimg{
-  max-width: 100px;
-  grid-area: a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-area: b;
 }
 .footerinfo{
-  grid-area: b;
+  grid-area: c;
   padding-left: 10px;
   vertical-align: center;
 }
@@ -299,6 +300,61 @@ width: 25%;
   color: #49391D;
 }
 /*END FOOTER*/
+
+/*MAPS*/
+.mapcards{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+}
+.card2 {
+  grid-area:b;
+}
+
+.card3{
+  grid-area:c;
+}
+.maptext{
+  grid-area:a;
+  padding: 10px;
+}
+
+.footer{
+  grid-area: d;
+}
+.mapstitle{
+text-align: center;
+padding-top: 20px;
+}
+
+.mapcards{
+  display: block;
+  /*grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+  grid-template-areas:
+  "a a"
+  "b c"
+  "d d"*/
+}
+
+
+@media (min-width:480px){
+  .mapcards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    grid-template-areas:
+    "a a"
+    "b c"
+    "d d"
+  }
+
+}
+
 
 
 /*
@@ -325,12 +381,6 @@ width: 25%;
   color: #C99B4F;
 }
 */
-.events1{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 
 .eventstext a:visited{
   color: black;
@@ -343,13 +393,12 @@ width: 25%;
 .eventshead{
   text-align: center;
 }
-<<<<<<< HEAD
 /*
 img{
  width: 100%;
 }
 */
-=======
+
 
 .historytitle{
   text-align: center;
@@ -445,35 +494,29 @@ max-width: 400px;
 
 /* END OF HISTORY PAGE TILES */
 
+/* EVENTS CSS */
 
 .eventsgrid{
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 325px 1fr;
+  grid-template-areas:
+  ". a ."
+  "b b b";
   grid-gap: 20px;
   list-style: none;
   text-decoration: none;
-  /*
-  grid-template-areas:
-  "a a a"
-  "b b b"
-  "c c c"
-  "d d d" ;
-*/
 }
 
-.events1{
-grid-column: 1/3;
-grid-row: 1;
+.eventsimage{
+grid-area: a;
 }
-.events2{
-  grid-column: 1/3;
-  grid-row: 2;
+.eventstext{
+  grid-area: b;
 }
 
-.events3{
+/*.events3{
   grid-column: 1/3;
   grid-row: 3;
 }
@@ -483,33 +526,51 @@ grid-row: 1;
   grid-row: 4;
 }
 
+.eventstext1 a:visited{
+  color: black;
+}
+
+.eventstext1 a:link{
+  color: black;
+}
+*/
+.eventshead{
+  text-align: center;
+}
+
+/*END OF EVENTS CSS*/
+
 .featureshead{
   text-align: center;
 }
 
-
-.features {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.featuresgrid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 325px 1fr;
+  grid-template-areas:
+  ". a ."
+  "b b b";
+  grid-gap: 20px;
+  list-style: none;
+  text-decoration: none;
 }
 
-.featurephoto{
-  flex: 1;
-  border: solid 4px black;
+.featuresimage{
+  grid-area: a;
 }
 
-.featuretext{
-  flex: 2;
-  padding: 0 10px;
+.featurestext{
+  grid-area: b;
 }
 
-.featuretext a:link, a:visited{
+.featurestext a:link, a:visited{
   color: black;
   text-decoration: none;
 }
 
-.featuretext a:hover, a:active{
+.featurestext a:hover, .featurestext a:active{
   color: #21263B;
 }
 
