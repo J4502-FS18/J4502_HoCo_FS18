@@ -331,6 +331,16 @@ text-align: center;
 padding-top: 20px;
 }
 
+.mapcards{
+  display: block;
+  /*grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+  grid-template-areas:
+  "a a"
+  "b c"
+  "d d"*/
+}
+
 
 @media (min-width:480px){
   .mapcards{
