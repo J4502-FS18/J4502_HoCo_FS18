@@ -41,7 +41,6 @@ nav ul{
   .menu-trigger{
     display:none;
   }
-
 }
 /*MEDIA QUERIES FOR slider*/
 
@@ -60,7 +59,7 @@ nav ul{
 
 *{
   margin: 0;
-  padding: 3px;
+  padding: 0px;
   list-style: none;
   text-decoration: none;
 }
@@ -185,26 +184,8 @@ P {
   font-weight: 300;
   font-size: 15px;
 }
-/******
 
 
-PARAGRAPH TEXT FORMATTING
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*******
 
 /* HEADING TEXT */
 h1 {
@@ -270,18 +251,10 @@ header {
 nav{
   grid-area: a;
 }
-a:link {
+nav a:link {
   text-decoration: none;
-  color: black;
 }
 
-.container a:link {
-  color: #C99B4F;
-
-}
-.container a:visited{
-  color: #C99B4F;
-}
 /*.{
   grid-area: c;
   display:none;
@@ -343,11 +316,11 @@ a:link {
   "b"
   "c"
 }
-.card2 {
+.mapcard2 {
   grid-area:b;
 }
 
-.card3{
+.mapcard3{
   grid-area:c;
 }
 .maptext{
@@ -355,9 +328,6 @@ a:link {
   padding: 10px;
 }
 
-.footer{
-  grid-area: d;
-}
 .mapstitle{
 text-align: center;
 padding-top: 5px;
@@ -579,7 +549,7 @@ grid-area: a;
 
 @media screen and (min-width:700px){
 .featuresgrid{
-  ©: 0;
+  margin: 0;
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
