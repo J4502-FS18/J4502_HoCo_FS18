@@ -586,11 +586,10 @@ grid-area: a;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 325px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  ". a ."
-  "b b b";
-  grid-gap: 20px;
+  "a"
+  "b";
   list-style: none;
   text-decoration: none;
 }
@@ -614,7 +613,7 @@ grid-area: a;
 
 @media screen and (min-width:700px){
 .featuresgrid{
-  margin: 0;
+  ©: 0;
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
