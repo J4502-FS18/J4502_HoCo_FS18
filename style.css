@@ -145,7 +145,26 @@ P {
   font-weight: 300;
   font-size: 15px;
 }
+/******
 
+
+PARAGRAPH TEXT FORMATTING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******
 
 /* HEADING TEXT */
 h1 {
@@ -168,6 +187,9 @@ h3 {
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin-left: 20px;
+  margin-right:20px;
+  text-align: center;
 }
 
 h5 {
@@ -503,7 +525,6 @@ max-width: 400px;
   .cards{
     display:grid;
     grid-template-areas:
-    "m m m"
     "a b c"
     "d e f"
     "g h i"
