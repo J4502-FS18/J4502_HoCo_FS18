@@ -331,6 +331,19 @@ text-align: center;
 padding-top: 20px;
 }
 
+<<<<<<< HEAD
+@media (min-width:250px){
+  .mapcards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    grid-template-areas:
+    "a a"
+    "b c"
+    "d d"
+}
+}
+=======
 .mapcards{
   display: block;
   /*grid-template-columns: 1fr 1fr;
