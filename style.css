@@ -145,7 +145,26 @@ P {
   font-weight: 300;
   font-size: 15px;
 }
+/******
 
+
+PARAGRAPH TEXT FORMATTING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******
 
 /* HEADING TEXT */
 h1 {
@@ -168,6 +187,9 @@ h3 {
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin-left: 20px;
+  margin-right:20px;
+  text-align: center;
 }
 
 h5 {
@@ -303,7 +325,6 @@ width: 25%;
 
 /*MAPS*/
 .mapcards{
-  position: absolute;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -328,22 +349,22 @@ width: 25%;
 }
 .mapstitle{
 text-align: center;
-padding-top: 20px;
+padding-top: 5px;
 }
 
-<<<<<<< HEAD
+
 @media (min-width:250px){
   .mapcards{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:20px;
+    grid-gap:5px;
     grid-template-areas:
     "a a"
     "b c"
     "d d"
 }
 }
-=======
+
 .mapcards{
   display: block;
   /*grid-template-columns: 1fr 1fr;
@@ -365,7 +386,6 @@ padding-top: 20px;
     "b c"
     "d d"
   }
-
 }
 
 
@@ -503,7 +523,6 @@ max-width: 400px;
   .cards{
     display:grid;
     grid-template-areas:
-    "m m m"
     "a b c"
     "d e f"
     "g h i"
@@ -588,8 +607,14 @@ grid-area: a;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
+<<<<<<< HEAD
   "a"
   "b";
+=======
+  ". a ."
+  "b b b";
+  grid-gap: 10px;
+>>>>>>> 48c8787930bab77211574d1d7f527449d1e062c8
   list-style: none;
   text-decoration: none;
 }
