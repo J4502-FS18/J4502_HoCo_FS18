@@ -535,6 +535,23 @@ grid-area: a;
   grid-area: b;
 }
 
+@media screen and (min-width:700px){
+.eventsgrid{
+  margin: 0;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+  grid-template-areas:
+  ". a a a a a ."
+  ". . b b b . .";
+  grid-gap: 25px;
+  list-style: none;
+  text-decoration: none;
+  }
+}
+
+
+}
 /*.events3{
   grid-column: 1/3;
   grid-row: 3;
@@ -558,6 +575,8 @@ grid-area: a;
 }
 
 /*END OF EVENTS CSS*/
+
+/*FEATURES CSS*/
 
 .featureshead{
   text-align: center;
@@ -592,6 +611,23 @@ grid-area: a;
 .featurestext a:hover, .featurestext a:active{
   color: #21263B;
 }
+
+@media screen and (min-width:700px){
+.featuresgrid{
+  margin: 0;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+  grid-template-areas:
+  ". a a a a a ."
+  ". . b b b . .";
+  grid-gap: 25px;
+  list-style: none;
+  text-decoration: none;
+  }
+}
+
+/*Feautures CSS end*/
 
 /*story page CSS*/
 
