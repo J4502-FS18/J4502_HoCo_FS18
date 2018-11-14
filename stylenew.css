@@ -11,15 +11,17 @@ nav ul li{
   margin-bottom: 20px;
 }
 
-nav a{
+header nav a{
   color: #C99B4F;
   text-decoration: none;
   padding: 20px 30px;
 }
+
 nav ul{
   display:none;
   margin: 20px 0px;
 }
+
 @media screen and (max-width: 650px){
   .desktopimg{
     display:none;
