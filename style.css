@@ -303,7 +303,6 @@ width: 25%;
 
 /*MAPS*/
 .mapcards{
-  position: absolute;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -331,7 +330,7 @@ text-align: center;
 padding-top: 5px;
 }
 
-<<<<<<< HEAD
+
 @media (min-width:250px){
   .mapcards{
     display: grid;
@@ -343,7 +342,7 @@ padding-top: 5px;
     "d d"
 }
 }
-=======
+
 .mapcards{
   display: block;
   /*grid-template-columns: 1fr 1fr;
@@ -365,7 +364,6 @@ padding-top: 5px;
     "b c"
     "d d"
   }
-
 }
 
 
