@@ -336,7 +336,7 @@ padding-top: 20px;
   .mapcards{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:20px;
+    grid-gap:5px;
     grid-template-areas:
     "a a"
     "b c"
@@ -571,7 +571,7 @@ grid-area: a;
   grid-template-areas:
   ". a ."
   "b b b";
-  grid-gap: 20px;
+  grid-gap: 10px;
   list-style: none;
   text-decoration: none;
 }
