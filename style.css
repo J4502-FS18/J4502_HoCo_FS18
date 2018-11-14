@@ -548,18 +548,13 @@ grid-area: a;
 }
 
 .featuresgrid {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: grid;
   grid-template-columns: 1px 1fr 1px;
   grid-template-areas:
-<<<<<<< HEAD
   ". a ."
   ". b .";
-=======
-  "a"
-  "b";
->>>>>>> 14a28a5d348272aee75a4a171e12331ac12f92e7
   list-style: none;
   text-decoration: none;
 }
@@ -583,7 +578,7 @@ grid-area: a;
 
 @media screen and (min-width:700px){
 .featuresgrid{
-  margin: 0;
+  margin: 0 auto;
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
