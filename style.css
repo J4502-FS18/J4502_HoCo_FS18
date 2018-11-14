@@ -23,7 +23,7 @@ shows up. Then, at the next highest media query, do display: block so it shows u
 }
 *{
   margin: 0;
-  padding: 0;
+  padding: 3px;
   list-style: none;
   text-decoration: none;
 }
