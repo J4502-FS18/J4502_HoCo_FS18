@@ -1,12 +1,12 @@
 $(document).ready(function(){
   $('.menu-trigger').click(function(){
-      $('.trigger').slideToggle(500);
+      $('nav ul').slideToggle(500);
       }); //(closing slidetoggle)
 
 
 $(window).resize(function(){
   if ($(window).width()>500){
-    $('.trigger').removeAttr('style');
+    $('nav ul').removeAttr('style');
 }
 
 }) //(closing resize function)

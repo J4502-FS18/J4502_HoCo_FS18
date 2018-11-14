@@ -60,7 +60,7 @@ nav ul{
 
 *{
   margin: 0;
-  padding: 3px;
+  padding: 0;
   list-style: none;
   text-decoration: none;
 }
@@ -185,26 +185,7 @@ P {
   font-weight: 300;
   font-size: 15px;
 }
-/******
 
-
-PARAGRAPH TEXT FORMATTING
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*******
 
 /* HEADING TEXT */
 h1 {
@@ -227,8 +208,6 @@ h3 {
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  margin-left: 20px;
-  margin-right:20px;
 }
 
 h5 {
@@ -271,7 +250,6 @@ nav{
 }
 a:link {
   text-decoration: none;
-  color: black;
 }
 
 .container a:link {
@@ -333,72 +311,6 @@ a:link {
 }
 /*END FOOTER*/
 
-/*MAPS*/
-.mapcards{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "a"
-  "b"
-  "c"
-}
-.card2 {
-  grid-area:b;
-}
-
-.card3{
-  grid-area:c;
-}
-.maptext{
-  grid-area:a;
-  padding: 10px;
-}
-
-.footer{
-  grid-area: d;
-}
-.mapstitle{
-text-align: center;
-padding-top: 5px;
-}
-
-
-@media (min-width:250px){
-  .mapcards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:5px;
-    grid-template-areas:
-    "a a"
-    "b c"
-    "d d"
-}
-}
-
-.mapcards{
-  display: block;
-  /*grid-template-columns: 1fr 1fr;
-  grid-gap:20px;
-  grid-template-areas:
-  "a a"
-  "b c"
-  "d d"*/
-}
-
-
-@media (min-width:480px){
-  .mapcards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:20px;
-    grid-template-areas:
-    "a a"
-    "b c"
-    "d d"
-  }
-}
-
-
 
 .eventstext a:visited{
   color: black;
@@ -428,19 +340,13 @@ display: grid;
 grid-gap:10px;
 gap:10px;
 grid-template-areas:
-"m"
-"a"
-"b"
-"c"
-"d"
-"e"
-"f"
-"g"
-"h"
-"i"
-"j"
-"k"
-"l";
+"m m "
+"a b"
+"c d"
+"e f"
+"g h"
+"i j"
+"k l";
 }
 
 .cards li{
@@ -504,6 +410,7 @@ max-width: 400px;
   .cards{
     display:grid;
     grid-template-areas:
+    "m m m"
     "a b c"
     "d e f"
     "g h i"
@@ -537,29 +444,22 @@ grid-area: a;
 
 .eventshead{
   text-align: center;
-}
 
 /*END OF EVENTS CSS*/
-
-/*FEATURES CSS*/
 
 .featureshead{
   text-align: center;
 }
 
-.featuresgrid {
+.featuresgrid{
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1px 1fr 1px;
+  grid-template-columns: 1fr 325px 1fr;
   grid-template-areas:
-<<<<<<< HEAD
   ". a ."
-  ". b .";
-=======
-  "a"
-  "b";
->>>>>>> 14a28a5d348272aee75a4a171e12331ac12f92e7
+  "b b b";
+  grid-gap: 20px;
   list-style: none;
   text-decoration: none;
 }
@@ -577,78 +477,24 @@ grid-area: a;
   text-decoration: none;
 }
 
-.featurestext a:hover, .featurestext a:active{
+.featurestext a:hover, a:active{
   color: #21263B;
 }
 
-@media screen and (min-width:700px){
-.featuresgrid{
-  margin: 0;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
-  grid-template-areas:
-  ". a a a a a ."
-  ". . b b b . .";
-  grid-gap: 25px;
-  list-style: none;
-  text-decoration: none;
-  }
-}
-
-/*Feautures CSS end*/
-
 /*story page CSS*/
-
-.storytitle{
-  text-align: center;
-}
-
-.caption{
-font-family: "Roboto", sans-serif;
-font-weight: bold;
-font-style: italic;
-margin:auto;
-font-size: 10px;
-margin-top: 5px;
-margin-bottom: 0px;
-text-align: center;
-}
-
-.photocredit{
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 10px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  text-align:center;
-}
-
-.byline{
-  font-family: "Roboto", sans-serif;
-  font-weight: 50;
-  font-style: italic;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  text-align:center;
-}
 
 .storycards {
   margin:0;
-  padding:10px;
+  padding:0;
 	list-style: none;
   display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  gap:20px;
   grid-template-areas:
   "a"
   "b"
-  "c";
-}
-
-.storycards li{
-padding: 10px;
-border-radius: 5px;
+  "c"
 }
 
 .storycard1{
@@ -657,8 +503,6 @@ border-radius: 5px;
 
 .storycard2{
   grid-area:b;
-  margin-top: 1em;
-  border-bottom: 2px solid #000000;
 }
 
 .storycard3{
@@ -666,26 +510,6 @@ border-radius: 5px;
 }
 
 
-/*article {
+article {
   margin-bottom: 0.7em;
-}*/
-
-/*@media screen and (min-width:480px){
-  .storycards{
-    display:grid;
-    grid-gap:10px;
-    padding:10px;
-    grid-template-columns: repeat(1, 460px);
-    grid-template-areas:
-    "a"
-    "b"
-    "c";
-  }*/
-
-  .storyphoto img{
-  display: block;
-  width: 75%;
-  height:auto;
-  margin:auto;
-  }
 }
