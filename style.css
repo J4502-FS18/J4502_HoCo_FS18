@@ -325,7 +325,6 @@ width: 25%;
 
 /*MAPS*/
 .mapcards{
-  position: absolute;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -350,22 +349,22 @@ width: 25%;
 }
 .mapstitle{
 text-align: center;
-padding-top: 20px;
+padding-top: 5px;
 }
 
-<<<<<<< HEAD
+
 @media (min-width:250px){
   .mapcards{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:20px;
+    grid-gap:5px;
     grid-template-areas:
     "a a"
     "b c"
     "d d"
 }
 }
-=======
+
 .mapcards{
   display: block;
   /*grid-template-columns: 1fr 1fr;
@@ -387,7 +386,6 @@ padding-top: 20px;
     "b c"
     "d d"
   }
-
 }
 
 
@@ -556,6 +554,23 @@ grid-area: a;
   grid-area: b;
 }
 
+@media screen and (min-width:700px){
+.eventsgrid{
+  margin: 0;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+  grid-template-areas:
+  ". a a a a a ."
+  ". . b b b . .";
+  grid-gap: 25px;
+  list-style: none;
+  text-decoration: none;
+  }
+}
+
+
+}
 /*.events3{
   grid-column: 1/3;
   grid-row: 3;
@@ -580,6 +595,8 @@ grid-area: a;
 
 /*END OF EVENTS CSS*/
 
+/*FEATURES CSS*/
+
 .featureshead{
   text-align: center;
 }
@@ -592,7 +609,7 @@ grid-area: a;
   grid-template-areas:
   ". a ."
   "b b b";
-  grid-gap: 20px;
+  grid-gap: 10px;
   list-style: none;
   text-decoration: none;
 }
@@ -613,6 +630,23 @@ grid-area: a;
 .featurestext a:hover, .featurestext a:active{
   color: #21263B;
 }
+
+@media screen and (min-width:700px){
+.featuresgrid{
+  margin: 0;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+  grid-template-areas:
+  ". a a a a a ."
+  ". . b b b . .";
+  grid-gap: 25px;
+  list-style: none;
+  text-decoration: none;
+  }
+}
+
+/*Feautures CSS end*/
 
 /*story page CSS*/
 
