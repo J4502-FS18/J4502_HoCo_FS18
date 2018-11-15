@@ -1,7 +1,4 @@
 /*NAV BAR*/
-.menu-trigger{
-  font-size: 50px;
-}
 
 nav ul li{
   display:block;
@@ -15,28 +12,38 @@ nav ul li{
 header nav a{
   color: #C99B4F;
   text-decoration: none;
-  padding: 20px 30px;
+
 }
 
 nav ul{
   display:none;
   margin: 20px 0px;
 }
-
-@media screen and (max-width: 650px){
-  .desktopimg{
+@media screen and (max-width:950px){
+  .desktop{
     display:none;
   }
 }
-@media screen and (min-width: 650px){
-  .mobileimg{
-    display:none;
-  }
-  }
 @media screen and (min-width:950px){
   nav ul{
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 30px;
+    grid-template-areas:
+    "a . b . c . d ."
   }
+  .events{
+    grid-area: a;
+  }
+  .features{
+    grid-area: b;
+  }
+  .maps{
+    grid-area:c;
+  }
+  .history{
+    grid-area:d;
+    }
+
   nav ul li{
     font-size: 28px;
     margin-bottom: 0;
@@ -44,23 +51,62 @@ nav ul{
   .menu-trigger{
     display:none;
   }
+  .mobile{
+    display:none;
+  }
+}
+
+.menu-trigger{
+  font-size: 50px;
 
 }
+
+header {
+  background-color: black;
+  padding: 2% 2%;
+  display:grid;
+  grid-template-columns: 10px 70px 1fr 250px 10px;
+  grid-template-areas:
+  ". a . c ."
+}
+
+.logo{
+  margin-top: 12px;
+  grid-area: c;
+}
+nav{
+  grid-area: a;
+}
+nav a:link {
+  text-decoration: none;
+}
+
 /*MEDIA QUERIES FOR slider*/
 
-@media(max-width:399px){
+@media(max-width:430px){
 .description{
   display: none;
 }
 }
 
-@media(min-width:399px){
+@media(min-width:430px){
 .readmore{
   display: none;
   font-size: 20px;
 }
 }
-
+/*
+@media(min-width:950px){
+  .mobile{
+    display:none;
+  }
+}
+@media(max-width:950px){
+  .desktop{
+    display:none;
+  }
+}
+*/
 *{
   margin: 0;
   padding: 0;
@@ -68,7 +114,7 @@ nav ul{
   text-decoration: none;
 }
 .slidetext{
-  /*z-index: 10000; */
+  /*z-index: 10000;*/
   font-size: 30px;
   text-align: center;
   margin-top: 10px;
@@ -82,8 +128,7 @@ nav ul{
 
 .slider{
   overflow: hidden;
-  height: 400px;
-  margin-bottom: 400px;
+  height: 50%;
 }
 
 .slider figure div{
@@ -91,12 +136,8 @@ nav ul{
   float: left;
 }
 
-.mobileimg{
+.slider figure img{
   width: 100%;
-  float: left;
-}
-.desktopimg{
-  max-width: 100%;
   float: left;
 }
 
@@ -236,26 +277,6 @@ h6{
 
 /* END HEADERS */
 
-header {
-  background-color: black;
-  padding: 2% 2%;
-  display:grid;
-  grid-template-columns: 70px 1fr 250px;
-  grid-template-areas:
-  "a . c"
-}
-
-.logo{
-  margin-top: 12px;
-  grid-area: c;
-}
-nav{
-  grid-area: a;
-}
-nav a:link {
-  text-decoration: none;
-}
-
 /*.{
   grid-area: c;
   display:none;
@@ -326,12 +347,13 @@ nav a:link {
 }
 .maptext{
   grid-area:a;
-  padding: 10px;
+  padding: 0px 5px 15px 10px;
 }
 
 .mapstitle{
 text-align: center;
-padding-top: 5px;
+padding:15px 0px;
+
 }
 
 
