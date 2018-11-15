@@ -528,14 +528,14 @@ grid-area: a;
   grid-area: b;
 }
 
-.featurestext a:link a:visited{
+.featurestext a:link{
   color: black;
   text-decoration: none;
 }
-
-.featurestext a:hover .featurestext a:active{
-  color: #21263B;
+.featurestext a:hover{
+  color: black;
 }
+
 
 @media screen and (min-width:700px){
 .featuresgrid{
