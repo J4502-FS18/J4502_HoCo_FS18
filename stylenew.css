@@ -375,6 +375,7 @@ padding-top: 5px;
 
 .eventshead{
   text-align: center;
+  padding: 20px;
 }
 
 
@@ -506,6 +507,7 @@ grid-area: a;
 /*END OF EVENTS CSS*/
 .featureshead {
   text-align: center;
+  padding: 20px;
 }
 
 .featuresgrid {
