@@ -2,6 +2,7 @@
 .menu-trigger{
   font-size: 50px;
 }
+
 nav ul li{
   display:block;
   font-family: "Roboto", sans-serif;
@@ -82,6 +83,7 @@ nav ul{
 .slider{
   overflow: hidden;
   height: 400px;
+  margin-bottom: 400px;
 }
 
 .slider figure div{
@@ -306,6 +308,7 @@ nav a:link {
 }
 /*END FOOTER*/
 /*MAPS*/
+========/
 .mapcards{
   display: grid;
   grid-template-columns: 1fr;
@@ -346,12 +349,6 @@ padding-top: 5px;
 
 .mapcards{
   display: block;
-  /*grid-template-columns: 1fr 1fr;
-  grid-gap:20px;
-  grid-template-areas:
-  "a a"
-  "b c"
-  "d d"*/
 }
 
 
@@ -507,7 +504,6 @@ grid-area: a;
   text-align: center;
 }
 /*END OF EVENTS CSS*/
-
 .featureshead {
   text-align: center;
 }
@@ -532,14 +528,15 @@ grid-area: a;
   grid-area: b;
 }
 
-.featurestext a:link, a:visited{
+.featurestext a:link a:visited{
   color: black;
   text-decoration: none;
 }
 
-.featurestext a:hover, .featurestext a:active{
+.featurestext a:hover .featurestext a:active{
   color: #21263B;
 }
+
 @media screen and (min-width:700px){
 .featuresgrid{
   margin: 0 auto;
@@ -554,6 +551,7 @@ grid-area: a;
   text-decoration: none;
   }
 }
+
 /*FEATURES END*/
 
 /*story page CSS*/
@@ -646,3 +644,4 @@ border-radius: 5px;
   height:auto;
   margin:auto;
   }
+*/
