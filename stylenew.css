@@ -297,6 +297,7 @@ h6{
 .footer{
   align-items: center;
   display: grid;
+  padding: 15px 0px;
   background-color: black;
   grid-template-columns: 1fr 100px 200px 1fr;
   grid-template-areas:
@@ -309,13 +310,15 @@ h6{
   font-size: 15px;
 }
 .footerimg{
-  margin-top: 20px;
-  margin-bottom: 20px;
+/*  margin-top: 20px;
+  margin-bottom: 20px;*/
+  vertical-align: center;
   grid-area: b;
 }
 .footerinfo{
   grid-area: c;
   padding-left: 10px;
+  padding-bottom:8px;
   vertical-align: center;
 }
 .footerinfo a:link{
@@ -329,33 +332,14 @@ h6{
 }
 /*END FOOTER*/
 /*MAPS*/
-========/
-.mapcards{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "a"
-  "b"
-  "c"
-}
-.mapcard2 {
-  grid-area:b;
-}
 
-.mapcard3{
-  grid-area:c;
-}
-.maptext{
-  grid-area:a;
-  padding: 0px 5px 15px 10px;
-}
 
 .mapstitle{
 text-align: center;
 padding:15px 0px;
 
 }
-
+/*
 
 @media (min-width:250px){
   .mapcards{
@@ -368,7 +352,7 @@ padding:15px 0px;
     "d d"
 }
 }
-
+*/
 .mapcards{
   display: block;
 }
@@ -377,14 +361,36 @@ padding:15px 0px;
 @media (min-width:480px){
   .mapcards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 15px 1fr 1fr 15px;
     grid-gap:20px;
     grid-template-areas:
-    "a a"
-    "b c"
-    "d d"
+    ". a a ."
+    ". b c ."
   }
 }
+@media (max-width:480px){
+  .mapcards{
+    display: grid;
+    grid-template-columns: 15px 1fr 15px;
+    grid-template-areas:
+    ". a ."
+    ". b ."
+    ". c ."
+  }
+}
+
+.mapcard2 {
+  grid-area:b;
+}
+
+.mapcard3{
+  grid-area:c;
+}
+.maptext{
+  grid-area:a;
+  padding: 0px 5px 15px 10px;
+}
+
 /* END MAPS*/
 
 .eventstext a:visited{
@@ -403,6 +409,7 @@ padding:15px 0px;
 
 .historytitle{
   text-align: center;
+  margin-top: 15px;
 }
 /* HISTORY PAGE TILES CSS */
 
@@ -433,17 +440,12 @@ grid-template-areas:
 .cards li{
 padding: 5px;
 border-radius: 5px;
-max-width: 400px;
 }
 
-.cards img{
-  width: 100%;
-}
 
 .cardtext{
-  max-width:200px;
-  text-align:center;
-  justify-content:center;
+  grid-area:m;
+  margin: 15px 10px;
 }
 
 .card1{
@@ -483,14 +485,13 @@ max-width: 400px;
 .card12{
   grid-area: l;
 }
-.card13{
-  grid-area: m;
-}
+
 
 @media screen and (min-width:550px){
   .cards{
     display:grid;
     grid-template-areas:
+    "m m m"
     "a b c"
     "d e f"
     "g h i"
@@ -506,10 +507,10 @@ max-width: 400px;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 325px 1fr;
+  grid-template-columns: 15px 1fr 15px;
   grid-template-areas:
   ". a ."
-  "b b b";
+  ". b .";
   grid-gap: 20px;
   list-style: none;
   text-decoration: none;
@@ -517,29 +518,48 @@ max-width: 400px;
 
 .eventsimage{
 grid-area: a;
+
+}
+@media screen and (min-width:1000px){
+  .eventsimage img{
+    max-height: 600px;
+    object-fit:cover;
+  }
+}
+@media screen and (max-width: 1000px){
+.eventsimage img{
+  max-height:400px;
+  object-fit: cover;
+}
+}
+.football{
+  object-position: 0 10px;
 }
 .eventstext{
   grid-area: b;
+  margin-bottom: 15px;
 }
 
 .eventshead{
   text-align: center;
+  margin: 15px 0px;
 }
 /*END OF EVENTS CSS*/
 .featureshead {
   text-align: center;
+  margin: 15px 0px;
 }
 
 .featuresgrid {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "a"
-  "b";
+  grid-template-columns: 15px 1fr 15px;
   list-style: none;
   text-decoration: none;
+  grid-template-areas:
+  ". a ."
+  ". b ."
 }
 
 .featuresimage{
@@ -548,6 +568,7 @@ grid-area: a;
 
 .featurestext{
   grid-area: b;
+  margin: 15px 0px;
 }
 
 .featurestext a:link{
