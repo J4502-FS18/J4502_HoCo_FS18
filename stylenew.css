@@ -114,8 +114,6 @@ nav a:link {
 }
 .slidetext{
   /*z-index: 10000;*/
-  display:flex;
-  flex-direction:column;
   font-size: 30px;
   text-align: center;
   margin-top: 10px;
@@ -126,10 +124,11 @@ nav a:link {
   color: white;
   background-color: rgba(0, 0, 0, 0.6)
 }
-@media screen and (min-width:800px)
+
 .slider{
   overflow: hidden;
   height: 50%;
+
 }
 
 .slider figure div{
@@ -149,6 +148,7 @@ nav a:link {
   left: 0;
   animation: 30s slidy infinite;
 }
+
 
 @keyframes slidy {
   0%{
@@ -285,15 +285,20 @@ h6{
   padding-bottom: 10px;
   padding-left: 50px;
 }*/
-
-
+.quicktop{
+  position:relative;
+  margin-top:15px;
+}
 
 .quickinfo {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
 }
-
+.quickinfo div{
+  margin-top:15px;
+}
 /*FOOTER*/
 .footer{
   align-items: center;
@@ -304,7 +309,9 @@ h6{
   grid-template-areas:
   "a b c d"
 }
-
+.indexfooter{
+  margin-top: 100px;
+}
 .footertext{
   color: #C99B4F;
   font-family: "Roboto", sans-serif;
@@ -628,7 +635,7 @@ text-align: center;
 
 .byline{
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 50;
   font-style: italic;
   font-size: 20px;
   margin-top: 5px;
