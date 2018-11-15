@@ -531,6 +531,21 @@ border-radius: 5px;
   text-decoration: none;
 }
 
+@media screen and (min-width:800px){
+.eventsgrid{
+  margin: 0 auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 800px 1fr;
+  list-style: none;
+  text-decoration: none;
+  grid-template-areas:
+  ". a ."
+  ". b ."
+  }
+}
+
+
 .eventsimage{
 grid-area: a;
 
@@ -562,11 +577,7 @@ grid-area: a;
 /*END OF EVENTS CSS*/
 .featureshead {
   text-align: center;
-<<<<<<< HEAD
-  padding: 20px;
-=======
   margin: 15px 0px;
->>>>>>> 98c0859c1fedad54196a7db7c5fd3ca767c61f44
 }
 
 .featuresgrid {
