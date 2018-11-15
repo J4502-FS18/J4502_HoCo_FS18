@@ -94,6 +94,7 @@ nav a:link {
   font-size: 20px;
 }
 }
+
 /*
 @media(min-width:950px){
   .mobile{
@@ -119,12 +120,17 @@ nav a:link {
   margin-top: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: absolute;
+  position:absolute;
   width: 20%;
   color: white;
   background-color: rgba(0, 0, 0, 0.6)
 }
-
+@media screen and (min-width:700px){
+ .slidetext{
+   margin-top: 70px;
+   padding: 65px 0px;
+ }
+}
 .slider{
   overflow: hidden;
   height: 50%;
