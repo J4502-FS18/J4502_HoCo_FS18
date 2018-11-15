@@ -535,7 +535,9 @@ grid-area: a;
 .featurestext a:hover{
   color: black;
 }
-
+.featurestext a:visited{
+  color: black;
+}
 
 @media screen and (min-width:700px){
 .featuresgrid{
@@ -644,4 +646,3 @@ border-radius: 5px;
   height:auto;
   margin:auto;
   }
-*/
