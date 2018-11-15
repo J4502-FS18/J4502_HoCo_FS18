@@ -1,7 +1,4 @@
 /*NAV BAR*/
-.menu-trigger{
-  font-size: 50px;
-}
 
 nav ul li{
   display:block;
@@ -15,28 +12,37 @@ nav ul li{
 header nav a{
   color: #C99B4F;
   text-decoration: none;
-  padding: 20px 30px;
 }
 
 nav ul{
   display:none;
   margin: 20px 0px;
 }
-
-@media screen and (max-width: 650px){
-  .desktopimg{
+@media screen and (max-width:950px){
+  .desktop{
     display:none;
   }
 }
-@media screen and (min-width: 650px){
-  .mobileimg{
-    display:none;
-  }
-  }
 @media screen and (min-width:950px){
   nav ul{
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 30px;
+    grid-template-areas:
+    "a . b . c . d ."
   }
+  .events{
+    grid-area: a;
+  }
+  .features{
+    grid-area: b;
+  }
+  .maps{
+    grid-area:c;
+  }
+  .history{
+    grid-area:d;
+    }
+
   nav ul li{
     font-size: 28px;
     margin-bottom: 0;
@@ -44,23 +50,63 @@ nav ul{
   .menu-trigger{
     display:none;
   }
+  .mobile{
+    display:none;
+  }
+}
+
+.menu-trigger{
+  font-size: 50px;
 
 }
+
+header {
+  background-color: black;
+  padding: 2% 2%;
+  display:grid;
+  grid-template-columns: 10px 70px 1fr 250px 10px;
+  grid-template-areas:
+  ". a . c ."
+}
+
+.logo{
+  margin-top: 12px;
+  grid-area: c;
+}
+nav{
+  grid-area: a;
+}
+nav a:link {
+  text-decoration: none;
+}
+
 /*MEDIA QUERIES FOR slider*/
 
-@media(max-width:399px){
+@media(max-width:430px){
 .description{
   display: none;
 }
 }
 
-@media(min-width:399px){
+@media(min-width:430px){
 .readmore{
   display: none;
   font-size: 20px;
 }
 }
 
+/*
+@media(min-width:950px){
+  .mobile{
+    display:none;
+  }
+}
+@media(max-width:950px){
+  .desktop{
+    display:none;
+  }
+}
+*/
 *{
   margin: 0;
   padding: 0;
@@ -68,22 +114,27 @@ nav ul{
   text-decoration: none;
 }
 .slidetext{
-  /*z-index: 10000; */
+  /*z-index: 10000;*/
   font-size: 30px;
   text-align: center;
   margin-top: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: absolute;
+  position:absolute;
   width: 20%;
   color: white;
   background-color: rgba(0, 0, 0, 0.6)
 }
-
+@media screen and (min-width:700px){
+ .slidetext{
+   margin-top: 70px;
+   padding: 65px 0px;
+ }
+}
 .slider{
   overflow: hidden;
-  height: 400px;
-  margin-bottom: 400px;
+  height: 50%;
+
 }
 
 .slider figure div{
@@ -91,12 +142,8 @@ nav ul{
   float: left;
 }
 
-.mobileimg{
+.slider figure img{
   width: 100%;
-  float: left;
-}
-.desktopimg{
-  max-width: 100%;
   float: left;
 }
 
@@ -107,6 +154,7 @@ nav ul{
   left: 0;
   animation: 30s slidy infinite;
 }
+
 
 @keyframes slidy {
   0%{
@@ -236,26 +284,6 @@ h6{
 
 /* END HEADERS */
 
-header {
-  background-color: black;
-  padding: 2% 2%;
-  display:grid;
-  grid-template-columns: 70px 1fr 250px;
-  grid-template-areas:
-  "a . c"
-}
-
-.logo{
-  margin-top: 12px;
-  grid-area: c;
-}
-nav{
-  grid-area: a;
-}
-nav a:link {
-  text-decoration: none;
-}
-
 /*.{
   grid-area: c;
   display:none;
@@ -263,38 +291,48 @@ nav a:link {
   padding-bottom: 10px;
   padding-left: 50px;
 }*/
-
-
+.quicktop{
+  position:relative;
+  margin-top:15px;
+}
 
 .quickinfo {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
 }
-
+.quickinfo div{
+  margin-top:15px;
+}
 /*FOOTER*/
 .footer{
   align-items: center;
   display: grid;
+  padding: 15px 0px;
   background-color: black;
   grid-template-columns: 1fr 100px 200px 1fr;
   grid-template-areas:
   "a b c d"
 }
-
+.indexfooter{
+  margin-top: 100px;
+}
 .footertext{
   color: #C99B4F;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
 .footerimg{
-  margin-top: 20px;
-  margin-bottom: 20px;
+/*  margin-top: 20px;
+  margin-bottom: 20px;*/
+  vertical-align: center;
   grid-area: b;
 }
 .footerinfo{
   grid-area: c;
   padding-left: 10px;
+  padding-bottom:8px;
   vertical-align: center;
 }
 .footerinfo a:link{
@@ -308,32 +346,14 @@ nav a:link {
 }
 /*END FOOTER*/
 /*MAPS*/
-========/
-.mapcards{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "a"
-  "b"
-  "c"
-}
-.mapcard2 {
-  grid-area:b;
-}
 
-.mapcard3{
-  grid-area:c;
-}
-.maptext{
-  grid-area:a;
-  padding: 10px;
-}
 
 .mapstitle{
 text-align: center;
-padding-top: 5px;
-}
+padding:15px 0px;
 
+}
+/*
 
 @media (min-width:250px){
   .mapcards{
@@ -346,7 +366,7 @@ padding-top: 5px;
     "d d"
 }
 }
-
+*/
 .mapcards{
   display: block;
 }
@@ -355,14 +375,36 @@ padding-top: 5px;
 @media (min-width:480px){
   .mapcards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 15px 1fr 1fr 15px;
     grid-gap:20px;
     grid-template-areas:
-    "a a"
-    "b c"
-    "d d"
+    ". a a ."
+    ". b c ."
   }
 }
+@media (max-width:480px){
+  .mapcards{
+    display: grid;
+    grid-template-columns: 15px 1fr 15px;
+    grid-template-areas:
+    ". a ."
+    ". b ."
+    ". c ."
+  }
+}
+
+.mapcard2 {
+  grid-area:b;
+}
+
+.mapcard3{
+  grid-area:c;
+}
+.maptext{
+  grid-area:a;
+  padding: 0px 5px 15px 10px;
+}
+
 /* END MAPS*/
 
 .eventstext a:visited{
@@ -382,6 +424,7 @@ padding-top: 5px;
 
 .historytitle{
   text-align: center;
+  margin-top: 15px;
 }
 /* HISTORY PAGE TILES CSS */
 
@@ -412,17 +455,12 @@ grid-template-areas:
 .cards li{
 padding: 5px;
 border-radius: 5px;
-max-width: 400px;
 }
 
-.cards img{
-  width: 100%;
-}
 
 .cardtext{
-  max-width:200px;
-  text-align:center;
-  justify-content:center;
+  grid-area:m;
+  margin: 15px 10px;
 }
 
 .card1{
@@ -462,14 +500,13 @@ max-width: 400px;
 .card12{
   grid-area: l;
 }
-.card13{
-  grid-area: m;
-}
+
 
 @media screen and (min-width:550px){
   .cards{
     display:grid;
     grid-template-areas:
+    "m m m"
     "a b c"
     "d e f"
     "g h i"
@@ -482,13 +519,13 @@ max-width: 400px;
 /* EVENTS CSS */
 
 .eventsgrid{
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 325px 1fr;
+  grid-template-columns: 15px 1fr 15px;
+  max-width: 1000px;
   grid-template-areas:
   ". a ."
-  "b b b";
+  ". b .";
   grid-gap: 20px;
   list-style: none;
   text-decoration: none;
@@ -496,30 +533,52 @@ max-width: 400px;
 
 .eventsimage{
 grid-area: a;
+
+}
+@media screen and (min-width:1000px){
+  .eventsimage img{
+    max-height: 600px;
+    object-fit:cover;
+  }
+}
+@media screen and (max-width: 1000px){
+.eventsimage img{
+  max-height:400px;
+  object-fit: cover;
+}
+}
+.football{
+  object-position: 0 10px;
 }
 .eventstext{
   grid-area: b;
+  margin-bottom: 15px;
 }
 
 .eventshead{
   text-align: center;
+  margin: 15px 0px;
 }
 /*END OF EVENTS CSS*/
 .featureshead {
   text-align: center;
+<<<<<<< HEAD
   padding: 20px;
+=======
+  margin: 15px 0px;
+>>>>>>> 98c0859c1fedad54196a7db7c5fd3ca767c61f44
 }
 
 .featuresgrid {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "a"
-  "b";
+  grid-template-columns: 15px 1fr 15px;
   list-style: none;
   text-decoration: none;
+  grid-template-areas:
+  ". a ."
+  ". b ."
 }
 
 .featuresimage{
@@ -528,6 +587,7 @@ grid-area: a;
 
 .featurestext{
   grid-area: b;
+  margin: 15px 0px;
 }
 
 .featurestext a:link{
@@ -541,18 +601,17 @@ grid-area: a;
   color: black;
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:800px){
 .featuresgrid{
   margin: 0 auto;
   padding: 15px;
   display: grid;
-  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
-  grid-template-areas:
-  ". a a a a a ."
-  ". . b b b . .";
-  grid-gap: 25px;
+  grid-template-columns: 1fr 800px 1fr;
   list-style: none;
   text-decoration: none;
+  grid-template-areas:
+  ". a ."
+  ". b ."
   }
 }
 
