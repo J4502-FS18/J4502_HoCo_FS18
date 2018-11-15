@@ -12,7 +12,6 @@ nav ul li{
 header nav a{
   color: #C99B4F;
   text-decoration: none;
-
 }
 
 nav ul{
@@ -582,18 +581,17 @@ grid-area: a;
   color: black;
 }
 
-@media screen and (min-width:700px){
+@media screen and (min-width:800px){
 .featuresgrid{
   margin: 0 auto;
   padding: 15px;
   display: grid;
-  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
-  grid-template-areas:
-  ". a a a a a ."
-  ". . b b b . .";
-  grid-gap: 25px;
+  grid-template-columns: 1fr 800px 1fr;
   list-style: none;
   text-decoration: none;
+  grid-template-areas:
+  ". a ."
+  ". b ."
   }
 }
 
