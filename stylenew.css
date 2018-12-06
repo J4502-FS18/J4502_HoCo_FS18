@@ -753,16 +753,17 @@ border-radius: 5px;
       width:100%;
       top:0;
       left:0;
-      background-color: #686868;
+      background-color: #1C191F;
   }
   .overlay {
       position: absolute;
       opacity: 0;
       transition:all .3s ease;
-      background-color: #686868;
+      background-color: #1C191F;
+
   }
   .container:hover .overlay,.container:hover .overlayFade {
-      opacity: 1;
+      opacity: 50;
   }
 
   .overlayLeft{
