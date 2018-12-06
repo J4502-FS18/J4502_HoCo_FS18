@@ -5,7 +5,7 @@ nav ul li{
   font-family: "Roboto", sans-serif;
   font-style: italic;
   font-size: 32px;
-  font-weight: 200;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -26,6 +26,7 @@ nav ul{
 @media screen and (min-width:950px){
   nav ul{
     display:grid;
+    align-items: center;
     grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 30px;
     grid-template-areas:
     "a . b . c . d ."
@@ -56,15 +57,15 @@ nav ul{
 }
 
 .menu-trigger{
-  font-size: 50px;
-
+  font-size: 75px;
 }
 
 header {
   background-color: black;
   padding: 2% 2%;
   display:grid;
-  grid-template-columns: 10px 70px 1fr 250px 10px;
+  align-items: center;
+  grid-template-columns: 10px 70px 1fr 400px 10px;
   grid-template-areas:
   ". a . c ."
 }
@@ -759,16 +760,17 @@ border-radius: 5px;
       width:100%;
       top:0;
       left:0;
-      background-color: #686868;
+      background-color: #1C191F;
   }
   .overlay {
       position: absolute;
       opacity: 0;
       transition:all .3s ease;
-      background-color: #686868;
+      background-color: #1C191F;
+
   }
   .container:hover .overlay,.container:hover .overlayFade {
-      opacity: 1;
+      opacity: 50;
   }
 
   .overlayLeft{
