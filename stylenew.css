@@ -62,7 +62,7 @@ nav ul{
 
 header {
   background-color: black;
-  padding: 2% 2%;
+  padding: 1% 2%;
   display:grid;
   align-items: center;
   grid-template-columns: 10px 70px 1fr 400px 10px;
@@ -71,7 +71,7 @@ header {
 }
 
 .logo{
-  margin-top: 12px;
+  margin-top:6px;
   grid-area: c;
 }
 nav{
