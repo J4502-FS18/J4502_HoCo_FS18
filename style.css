@@ -1,141 +1,49 @@
-/*NAV BAR*/
+/* Do a media query around 350 that has h5 and h6 set to display: none so that only the headline
+shows up. Then, at the next highest media query, do display: block so it shows up again */
 
-nav ul li{
-  display:block;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
+/*MEDIA QUERIES FOR HOME PAGE*/
 
-header nav a{
-  color: #C99B4F;
-  text-decoration: none;
-}
-
-nav ul{
-  display:none;
-  margin: 20px 0px;
-}
-@media screen and (max-width:950px){
-  .desktop{
-    display:none;
-  }
-}
-@media screen and (min-width:950px){
-  nav ul{
-    display:grid;
-    align-items: center;
-    grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 30px;
-    grid-template-areas:
-    "a . b . c . d ."
-  }
-  .events{
-    grid-area: a;
-  }
-  .features{
-    grid-area: b;
-  }
-  .maps{
-    grid-area:c;
-  }
-  .history{
-    grid-area:d;
-    }
-
-  nav ul li{
-    font-size: 28px;
-    margin-bottom: 0;
-  }
-  .menu-trigger{
-    display:none;
-  }
-  .mobile{
-    display:none;
-  }
-}
-
-.menu-trigger{
-  font-size: 75px;
-}
-
-header {
-  background-color: black;
-  padding: 1% 2%;
-  display:grid;
-  align-items: center;
-  grid-template-columns: 10px 70px 1fr 400px 10px;
-  grid-template-areas:
-  ". a . c ."
-}
-
-.logo{
-  margin-top:6px;
-  grid-area: c;
-}
-nav{
-  grid-area: a;
-}
-nav a:link {
-  text-decoration: none;
-}
-
-/*MEDIA QUERIES FOR slider*/
-
-@media(max-width:430px){
+@media(max-width:399px){
 .description{
   display: none;
 }
 }
-
-@media(min-width:430px){
+@media(min-width:399px){
 .readmore{
   display: none;
   font-size: 20px;
 }
+
 }
 
-/*
-@media(min-width:950px){
-  .mobile{
-    display:none;
-  }
+.menu-trigger{
+  font-size: 50px;
+  margin: 0 auto;
+  max-height: 100px;
 }
-@media(max-width:950px){
-  .desktop{
-    display:none;
-  }
-}
-*/
 *{
   margin: 0;
-  padding: 0;
+  padding: 3px;
   list-style: none;
   text-decoration: none;
 }
+
 .slidetext{
-  /*z-index: 10000;*/
+  /*z-index: 10000; */
   font-size: 30px;
   text-align: center;
   margin-top: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
-  position:absolute;
+  position: absolute;
   width: 20%;
   color: white;
   background-color: rgba(0, 0, 0, 0.6)
 }
-@media screen and (min-width:700px){
- .slidetext{
-   margin-top: 70px;
-   padding: 65px 0px;
- }
-}
+
 .slider{
   overflow: hidden;
-  height: 50%;
-
+  height: 400px;
 }
 
 .slider figure div{
@@ -155,7 +63,6 @@ nav a:link {
   left: 0;
   animation: 30s slidy infinite;
 }
-
 
 @keyframes slidy {
   0%{
@@ -285,55 +192,102 @@ h6{
 
 /* END HEADERS */
 
-/*.{
+header {
+  background-color: black;
+  padding: 2% 2%;
+  display:grid;
+  grid-template-columns: 70px 1fr 250px;
+  grid-template-areas:
+  "a b c"
+}
+
+.container {
+  align-self: center;
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.logo{
+  align-self: center;
+  grid-area: c;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.container a:link {
+  color: #C99B4F;
+
+}
+.container a:visited{
+  color: #C99B4F;
+}
+.page{
   grid-area: c;
   display:none;
   font-style: italic;
   padding-bottom: 10px;
   padding-left: 50px;
-}*/
-.quicktop{
-  position:relative;
-  margin-top:15px;
 }
+
+/* FOR IMAGE SLIDER REAL
+.imageslider {
+  display: flex;
+  flex-direction: row;
+} */
 
 .quickinfo {
   font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  text-align: center;
+  font-weight: 300;
+  color: white;
 }
-.quickinfo div{
-  margin-top:15px;
+
+/*
+.footer{
+  display: flex;
+  padding: 2% 5%;
+  background-color:black;
+  justify-content: flex-start;
+  align-items: center;
 }
+*/
+
+/*
+.footerimg{
+flex: 1;
+width: 25%;
+}
+*/
+
 /*FOOTER*/
 .footer{
   align-items: center;
   display: grid;
-  padding: 15px 0px;
   background-color: black;
   grid-template-columns: 1fr 100px 200px 1fr;
   grid-template-areas:
   "a b c d"
 }
-.indexfooter{
-  margin-top: 100px;
-}
+
 .footertext{
   color: #C99B4F;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
 .footerimg{
-/*  margin-top: 20px;
-  margin-bottom: 20px;*/
-  vertical-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   grid-area: b;
 }
 .footerinfo{
   grid-area: c;
   padding-left: 10px;
-  padding-bottom:8px;
   vertical-align: center;
 }
 .footerinfo a:link{
@@ -346,15 +300,36 @@ h6{
   color: #49391D;
 }
 /*END FOOTER*/
+
 /*MAPS*/
+.mapcards{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+}
+.card2 {
+  grid-area:b;
+}
 
+.card3{
+  grid-area:c;
+}
+.maptext{
+  grid-area:a;
+  padding: 10px;
+}
 
+.footer{
+  grid-area: d;
+}
 .mapstitle{
 text-align: center;
-padding:15px 0px;
-
+padding-top: 5px;
 }
-/*
+
 
 @media (min-width:250px){
   .mapcards{
@@ -367,46 +342,56 @@ padding:15px 0px;
     "d d"
 }
 }
-*/
+
 .mapcards{
   display: block;
+  /*grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+  grid-template-areas:
+  "a a"
+  "b c"
+  "d d"*/
 }
 
 
 @media (min-width:480px){
   .mapcards{
     display: grid;
-    grid-template-columns: 15px 1fr 1fr 15px;
+    grid-template-columns: 1fr 1fr;
     grid-gap:20px;
     grid-template-areas:
-    ". a a ."
-    ". b c ."
-  }
-}
-@media (max-width:480px){
-  .mapcards{
-    display: grid;
-    grid-template-columns: 15px 1fr 15px;
-    grid-template-areas:
-    ". a ."
-    ". b ."
-    ". c ."
+    "a a"
+    "b c"
+    "d d"
   }
 }
 
-.mapcard2 {
-  grid-area:b;
+
+
+/*
+.contactinfo{
+  font-family: "Roboto", sans-serif;
+  color: #C99B4F;
+  font-size: 13px;
+  font-weight: 300;
+  flex: 5;
+  width: 75%;
+  margin-left: 18px;
+
+}
+.contactinfo a:link, a:visited{
+  color: #C99B4F;
+
+
+}
+.contactinfo a:hover, a:active{
+  color: #21263B;
 }
 
-.mapcard3{
-  grid-area:c;
+.url a:link, a:visited{
+  color: #C99B4F;
 }
-.maptext{
-  grid-area:a;
-  padding: 0px 5px 15px 10px;
-}
-
-/* END MAPS*/
+*/
 
 .eventstext a:visited{
   color: black;
@@ -418,14 +403,16 @@ padding:15px 0px;
 
 .eventshead{
   text-align: center;
-  padding: 20px;
 }
-
+/*
+img{
+ width: 100%;
+}
+*/
 
 
 .historytitle{
   text-align: center;
-  margin-top: 15px;
 }
 /* HISTORY PAGE TILES CSS */
 
@@ -456,12 +443,17 @@ grid-template-areas:
 .cards li{
 padding: 5px;
 border-radius: 5px;
+max-width: 400px;
 }
 
+.cards img{
+  width: 100%;
+}
 
 .cardtext{
-  grid-area:m;
-  margin: 15px 10px;
+  max-width:200px;
+  text-align:center;
+  justify-content:center;
 }
 
 .card1{
@@ -501,7 +493,9 @@ border-radius: 5px;
 .card12{
   grid-area: l;
 }
-
+.card13{
+  grid-area: m;
+}
 
 @media screen and (min-width:550px){
   .cards{
@@ -515,83 +509,88 @@ border-radius: 5px;
   }
 }
 
-
 /* END OF HISTORY PAGE TILES */
 
 /* EVENTS CSS */
 
 .eventsgrid{
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: 15px 1fr 15px;
-  max-width: 1000px;
+  grid-template-columns: 1fr 325px 1fr;
   grid-template-areas:
   ". a ."
-  ". b .";
+  "b b b";
   grid-gap: 20px;
   list-style: none;
   text-decoration: none;
 }
 
-@media screen and (min-width:800px){
-.eventsgrid{
-  margin: 0 auto;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: 1fr 800px 1fr;
-  list-style: none;
-  text-decoration: none;
-  grid-template-areas:
-  ". a ."
-  ". b ."
-  }
-}
-
-
 .eventsimage{
 grid-area: a;
-
-}
-@media screen and (min-width:1000px){
-  .eventsimage img{
-    max-height: 600px;
-    object-fit:cover;
-  }
-}
-@media screen and (max-width: 1000px){
-.eventsimage img{
-  max-height:400px;
-  object-fit: cover;
-}
-}
-.football{
-  object-position: 0 10px;
 }
 .eventstext{
   grid-area: b;
-  margin-bottom: 15px;
 }
 
+@media screen and (min-width:700px){
+.eventsgrid{
+  margin: 0;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+  grid-template-areas:
+  ". a a a a a ."
+  ". . b b b . .";
+  grid-gap: 25px;
+  list-style: none;
+  text-decoration: none;
+  }
+}
+
+
+}
+/*.events3{
+  grid-column: 1/3;
+  grid-row: 3;
+}
+
+.events4{
+  grid-column: 1/3;
+  grid-row: 4;
+}
+
+.eventstext1 a:visited{
+  color: black;
+}
+
+.eventstext1 a:link{
+  color: black;
+}
+*/
 .eventshead{
   text-align: center;
-  margin: 15px 0px;
 }
+
 /*END OF EVENTS CSS*/
-.featureshead {
+
+/*FEATURES CSS*/
+
+.featureshead{
   text-align: center;
-  margin: 15px 0px;
 }
 
 .featuresgrid {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 15px 1fr 15px;
-  list-style: none;
-  text-decoration: none;
+  grid-template-columns: 1fr 325px 1fr;
   grid-template-areas:
   ". a ."
-  ". b ."
+  "b b b";
+  grid-gap: 10px;
+  list-style: none;
+  text-decoration: none;
 }
 
 .featuresimage{
@@ -600,35 +599,33 @@ grid-area: a;
 
 .featurestext{
   grid-area: b;
-  margin: 15px 0px;
 }
 
-.featurestext a:link{
+.featurestext a:link, a:visited{
   color: black;
   text-decoration: none;
 }
-.featurestext a:hover{
-  color: black;
-}
-.featurestext a:visited{
-  color: black;
+
+.featurestext a:hover, .featurestext a:active{
+  color: #21263B;
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width:700px){
 .featuresgrid{
-  margin: 0 auto;
+  margin: 0;
   padding: 15px;
   display: grid;
-  grid-template-columns: 1fr 800px 1fr;
+  grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+  grid-template-areas:
+  ". a a a a a ."
+  ". . b b b . .";
+  grid-gap: 25px;
   list-style: none;
   text-decoration: none;
-  grid-template-areas:
-  ". a ."
-  ". b ."
   }
 }
 
-/*FEATURES END*/
+/*Feautures CSS end*/
 
 /*story page CSS*/
 
@@ -697,23 +694,6 @@ border-radius: 5px;
   grid-area:c;
 }
 
-
-/*article {
-  margin-bottom: 0.7em;
-}*/
-
-/*@media screen and (min-width:480px){
-  .storycards{
-    display:grid;
-    grid-gap:10px;
-    padding:10px;
-    grid-template-columns: repeat(1, 460px);
-    grid-template-areas:
-    "a"
-    "b"
-    "c";
-  }*/
-
   .storyphoto img{
   display: block;
   width: 75%;
@@ -722,101 +702,78 @@ border-radius: 5px;
   }
 
 
-  @media screen and (min-width:399px){
-    .storycard3 p{
-      margin: 0 5%;
-    }
-  }
-  /*HOVER IMAGE CSS TEST STARTS HERE*/
 
-  .title{
-      font-family: sans-serif;
-      color: #dc2d5e;
-  }
-  .container {
-      position: relative;
-    /*  width: 700px;
-      height: 500px;*/
-      display: inline-block;
-  }
+/*end of story page CSS*/
 
-  .image {
-      display: block;
-      width: 700px;
-      height: 500px;
-  }
+/*
+header {
+  display: flex;
+  flex-flow:row;
+  background-color: black;
+  justify-content: flex-start;
+  align-items: center;
+height: px;
+width: 100%
+z-index: 10;
+}
+
+.footer{
+display: flex;
+flex-direction: row;
+justify-content: right;
+}
+
+.hamburger{
+  width: 50%;
+}
 
 
-  .text {
-      color: white;
-      font-size: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: sans-serif;
-  }
-  .overlayFade{
-      height: 100%;
-      width:100%;
-      top:0;
-      left:0;
-      background-color: #1C191F;
-  }
-  .overlay {
-      position: absolute;
-      opacity: 0;
-      transition:all .3s ease;
-      background-color: #1C191F;
+.container{
+  background-color: black;
+  height: 450px;
+  width: 250px;
+  align-items: center;
+}
 
-  }
-  .container:hover .overlay,.container:hover .overlayFade {
-      opacity: 50;
-  }
+.page-1 a:link{
+  color: #C99B4F;
+  font-size: 25px;
+  font-family: "Roboto";
+}
 
-  .overlayLeft{
-      height: 100%;
-      width:0;
-      top:0;
-      left:0;
-      background-color: #686868;
-  }
-  .overlayRight{
-      height: 100%;
-      width: 0;
-      top:0;
-      right:0;
-      background-color: #686868;
-  }
-  .container:hover .overlayLeft ,.container:hover .overlayRight {
-      width: 100%;
-  }
-  .overlayTop{
-      width: 100%;
-      height: 0;
-      top:0;
-      left:0;
-      background-color: #686868;
-  }
-  .overlayBottom{
-      width: 100%;
-      height: 0;
-      bottom:0;
-      left:0;
-      background-color: #686868;
-  }
-  .container:hover .overlayTop ,.container:hover .overlayBottom {
-      height: 100%;
-  }
-  .overlayCross{
-      width: 0%;
-      height: 0;
-      top:0;
-      left:0;
-      background-color: #686868;
-  }
-  .container:hover .overlayCross {
-      height: 100%;
-      width: 100%;
-  }
-  /*HOVER IMAGE CSS TEST ENDS HERE*/
+.page-2 a:link{
+  color: #C99B4F;
+  font-size: 25px;
+}
+
+.page-3 a:link{
+  color: #C99B4F;
+  font-size: 25px;
+}
+
+.page-4 a:link{
+  color: #C99B4F;
+  font-size: 25px;
+}
+
+.hamburger{
+  align-self: center;
+}
+
+.logo{
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:visited{
+  color: gray;
+}
+
+.page a:link{
+  font-size: 25px;
+  font-family: "Roboto";
+  color: #C99B4F;
+}
+*/
