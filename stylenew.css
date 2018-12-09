@@ -514,6 +514,7 @@ border-radius: 5px;
   }
 }
 
+
 /* END OF HISTORY PAGE TILES */
 
 /* EVENTS CSS */
@@ -727,8 +728,8 @@ border-radius: 5px;
   }
   .container {
       position: relative;
-      width: 700px;
-      height: 500px;
+    /*  width: 700px;
+      height: 500px;*/
       display: inline-block;
   }
 
