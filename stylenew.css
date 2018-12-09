@@ -639,10 +639,11 @@ grid-area: a;
 font-family: "Roboto", sans-serif;
 font-weight: bold;
 font-style: italic;
-margin:auto;
 font-size: 10px;
-margin-top: 5px;
-margin-bottom: 0px;
+margin-top: 10px;
+margin-left: 25%;
+margin-right: 25%;
+margin-bottom: 10px;
 text-align: center;
 }
 
@@ -723,9 +724,19 @@ border-radius: 5px;
 
   @media screen and (min-width:399px){
     .storycard3 p{
-      margin: 0 5%;
+      margin: 0 12%;
     }
   }
+
+  @media (max-width:800px){
+    .caption{
+      margin-top:10px;
+      margin-left: 12%;
+      margin-right: 12%;
+      margin-bottom: 10px;
+    }
+  }
+
   /*HOVER IMAGE CSS TEST STARTS HERE*/
 
   .title{
