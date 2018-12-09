@@ -6,7 +6,6 @@ nav ul li{
   font-style: italic;
   font-size: 32px;
   font-weight: 500;
-  margin-bottom: 20px;
 }
 
 header nav a{
@@ -17,6 +16,7 @@ header nav a{
 nav ul{
   display:none;
   margin: 20px 0px;
+  margin-top: 33px;
 }
 @media screen and (max-width:950px){
   .desktop{
@@ -46,7 +46,6 @@ nav ul{
 
   nav ul li{
     font-size: 28px;
-    margin-bottom: 0;
   }
   .menu-trigger{
     display:none;
@@ -64,16 +63,28 @@ header {
   background-color: black;
   padding: 1% 2%;
   display:grid;
-  align-items: center;
+  /*align-items: center;*/
   grid-template-columns: 10px 70px 1fr 400px 10px;
   grid-template-areas:
   ". a . c ."
 }
-
 .logo{
-  margin-top:6px;
+  margin-top:16px;
   grid-area: c;
 }
+@media screen and (max-width:520px){
+  header{
+    display:grid;
+    grid-template-columns: 10px 70px 1fr 325px 10px;
+    grid-template-areas:
+    ". a . c ."
+  }
+  .logo{
+    margin-top:20px;
+    grid-area:c;
+  }
+}
+
 nav{
   grid-area: a;
 }
